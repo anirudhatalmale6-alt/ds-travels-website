@@ -1,0 +1,2079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D S Travels — Premium Flight, Hotel & Travel Insurance | Pune</title>
+    <meta name="description" content="D S Travels, Pune's trusted travel agency. Book airline tickets, hotels, and travel insurance at the best prices. Located in Aundh, Pune.">
+    <meta name="keywords" content="travel agency Pune, flight booking Pune, hotel booking, travel insurance, D S Travels, Aundh Pune">
+    <meta name="author" content="D S Travels">
+    <meta property="og:title" content="D S Travels — Your Journey Starts Here">
+    <meta property="og:description" content="Pune's trusted travel agency for flights, hotels, and travel insurance.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dstravels.in">
+    <link rel="canonical" href="https://dstravels.in">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --navy: #0B1D35;
+            --navy-mid: #132D4F;
+            --navy-light: #1B3F6B;
+            --gold: #C9963B;
+            --gold-light: #E4BE7A;
+            --gold-glow: rgba(201, 150, 59, 0.15);
+            --coral: #E07A4B;
+            --warm-white: #FAF8F5;
+            --cream: #F3EDE4;
+            --text-dark: #1A1A2E;
+            --text-mid: #4A5568;
+            --text-light: #8A94A6;
+            --white: #FFFFFF;
+            --shadow-sm: 0 2px 8px rgba(11, 29, 53, 0.06);
+            --shadow-md: 0 8px 30px rgba(11, 29, 53, 0.10);
+            --shadow-lg: 0 20px 60px rgba(11, 29, 53, 0.15);
+            --shadow-gold: 0 8px 30px rgba(201, 150, 59, 0.20);
+            --radius: 16px;
+            --radius-sm: 10px;
+            --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        html { scroll-behavior: smooth; font-size: 16px; }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: var(--text-dark);
+            background: var(--warm-white);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        a { text-decoration: none; color: inherit; }
+        img { max-width: 100%; display: block; }
+        ul { list-style: none; }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ===== DECORATIVE ELEMENTS ===== */
+        .gold-line {
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold), var(--gold-light));
+            border-radius: 2px;
+        }
+
+        .section-label {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gold);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .section-label::before {
+            content: '';
+            width: 30px;
+            height: 2px;
+            background: var(--gold);
+            border-radius: 1px;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            color: var(--navy);
+            margin-bottom: 16px;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-mid);
+            line-height: 1.7;
+            max-width: 600px;
+        }
+
+        /* ===== NAVIGATION ===== */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 20px 0;
+            transition: var(--transition);
+        }
+
+        .nav.scrolled {
+            background: rgba(11, 29, 53, 0.95);
+            backdrop-filter: blur(20px);
+            padding: 12px 0;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.15);
+        }
+
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo svg { height: 42px; width: auto; }
+
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--white);
+            letter-spacing: 0.5px;
+        }
+
+        .logo-text span {
+            color: var(--gold);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .nav-links a {
+            color: rgba(255,255,255,0.8);
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover { color: var(--white); }
+        .nav-links a:hover::after { width: 100%; }
+
+        .nav-cta {
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            color: var(--navy) !important;
+            padding: 10px 24px;
+            border-radius: 50px;
+            font-weight: 600 !important;
+            font-size: 0.85rem !important;
+            letter-spacing: 0.5px;
+            transition: var(--transition);
+        }
+
+        .nav-cta::after { display: none !important; }
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-gold);
+        }
+
+        /* Hamburger */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 8px;
+            z-index: 1001;
+        }
+
+        .hamburger span {
+            width: 26px;
+            height: 2px;
+            background: var(--white);
+            border-radius: 2px;
+            transition: var(--transition);
+        }
+
+        .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+        .hamburger.active span:nth-child(2) { opacity: 0; }
+        .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+        /* ===== HERO ===== */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(165deg, var(--navy) 0%, var(--navy-mid) 50%, var(--navy-light) 100%);
+            position: relative;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, var(--gold-glow) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(224, 122, 75, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 10s ease-in-out infinite reverse;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(30px, -30px); }
+        }
+
+        /* Decorative grid pattern */
+        .hero-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 680px;
+            padding: 120px 0 80px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(201, 150, 59, 0.12);
+            border: 1px solid rgba(201, 150, 59, 0.25);
+            padding: 8px 18px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--gold-light);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 32px;
+            animation: fadeInUp 0.8s ease both;
+        }
+
+        .hero-badge svg { width: 16px; height: 16px; }
+
+        .hero h1 {
+            font-size: clamp(2.8rem, 6vw, 4.5rem);
+            color: var(--white);
+            line-height: 1.08;
+            margin-bottom: 24px;
+            animation: fadeInUp 0.8s ease 0.15s both;
+        }
+
+        .hero h1 em {
+            font-style: italic;
+            color: var(--gold);
+            position: relative;
+        }
+
+        .hero h1 em::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gold);
+            opacity: 0.4;
+            border-radius: 2px;
+        }
+
+        .hero-desc {
+            font-size: 1.15rem;
+            color: rgba(255,255,255,0.65);
+            line-height: 1.8;
+            margin-bottom: 40px;
+            animation: fadeInUp 0.8s ease 0.3s both;
+        }
+
+        .hero-actions {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease 0.45s both;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            color: var(--navy);
+            padding: 16px 36px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .btn-primary svg { width: 20px; height: 20px; }
+
+        .btn-outline {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: transparent;
+            color: var(--white);
+            padding: 15px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border: 1.5px solid rgba(255,255,255,0.25);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+            background: rgba(201, 150, 59, 0.08);
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 48px;
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            animation: fadeInUp 0.8s ease 0.6s both;
+        }
+
+        .hero-stat h3 {
+            font-size: 2rem;
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        .hero-stat p {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.5);
+            margin-top: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        /* Decorative airplane path */
+        .hero-visual {
+            position: absolute;
+            right: -40px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 500px;
+            height: 500px;
+            opacity: 0.06;
+            z-index: 1;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ===== SERVICES ===== */
+        .services {
+            padding: 100px 0;
+            background: var(--warm-white);
+            position: relative;
+        }
+
+        .services-header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .services-header .section-label { justify-content: center; }
+        .services-header .section-label::before { display: none; }
+        .services-header .section-subtitle { margin: 0 auto; }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .service-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 44px 36px;
+            position: relative;
+            overflow: hidden;
+            transition: var(--transition);
+            border: 1px solid rgba(0,0,0,0.04);
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gold), var(--gold-light));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .service-card:hover::before { transform: scaleX(1); }
+
+        .service-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, var(--navy), var(--navy-mid));
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 28px;
+            position: relative;
+        }
+
+        .service-icon::after {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, var(--gold-glow), transparent);
+            z-index: -1;
+        }
+
+        .service-icon svg { width: 28px; height: 28px; color: var(--gold); }
+
+        .service-card h3 {
+            font-size: 1.4rem;
+            color: var(--navy);
+            margin-bottom: 14px;
+        }
+
+        .service-card p {
+            color: var(--text-mid);
+            line-height: 1.75;
+            font-size: 0.95rem;
+            margin-bottom: 24px;
+        }
+
+        .service-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--gold);
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .service-link:hover { gap: 14px; }
+        .service-link svg { width: 18px; height: 18px; }
+
+        /* ===== WHY CHOOSE US ===== */
+        .why-us {
+            padding: 100px 0;
+            background: var(--navy);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .why-us::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: radial-gradient(circle at top right, rgba(201, 150, 59, 0.06), transparent 60%);
+        }
+
+        .why-us .section-title { color: var(--white); }
+        .why-us .section-subtitle { color: rgba(255,255,255,0.55); }
+
+        .why-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 64px;
+            gap: 40px;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .why-card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.07);
+            border-radius: var(--radius);
+            padding: 36px 28px;
+            transition: var(--transition);
+        }
+
+        .why-card:hover {
+            background: rgba(255,255,255,0.08);
+            border-color: rgba(201, 150, 59, 0.2);
+            transform: translateY(-4px);
+        }
+
+        .why-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--gold);
+            opacity: 0.3;
+            margin-bottom: 16px;
+        }
+
+        .why-card h3 {
+            font-size: 1.15rem;
+            color: var(--white);
+            margin-bottom: 12px;
+        }
+
+        .why-card p {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.5);
+            line-height: 1.7;
+        }
+
+        /* ===== SPECIAL OFFERS ===== */
+        .offers {
+            padding: 100px 0;
+            background: var(--warm-white);
+        }
+
+        .offers-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 56px;
+            gap: 40px;
+        }
+
+        .offers-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 28px;
+        }
+
+        .offer-card {
+            border-radius: var(--radius);
+            overflow: hidden;
+            position: relative;
+            background: var(--white);
+            border: 1px solid rgba(0,0,0,0.04);
+            display: flex;
+            transition: var(--transition);
+        }
+
+        .offer-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .offer-visual {
+            width: 200px;
+            min-height: 220px;
+            position: relative;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .offer-visual-bg {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+        }
+
+        .offer-visual-bg.dubai { background: linear-gradient(135deg, #D4A853, #E8734A); }
+        .offer-visual-bg.goa { background: linear-gradient(135deg, #2DB87D, #16A085); }
+        .offer-visual-bg.thailand { background: linear-gradient(135deg, #E07A4B, #C0392B); }
+        .offer-visual-bg.singapore { background: linear-gradient(135deg, #1B3F6B, #2980B9); }
+
+        .offer-badge {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            background: var(--coral);
+            color: var(--white);
+            padding: 5px 12px;
+            border-radius: 50px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .offer-info {
+            padding: 28px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex: 1;
+        }
+
+        .offer-route {
+            font-size: 0.78rem;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .offer-info h3 {
+            font-size: 1.3rem;
+            color: var(--navy);
+            margin-bottom: 10px;
+        }
+
+        .offer-info p {
+            font-size: 0.9rem;
+            color: var(--text-mid);
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .offer-price {
+            display: flex;
+            align-items: baseline;
+            gap: 6px;
+            margin-bottom: 18px;
+        }
+
+        .offer-price .from {
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+
+        .offer-price .amount {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--navy);
+        }
+
+        .offer-price .per {
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+
+        .btn-enquire {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--navy);
+            color: var(--white);
+            padding: 10px 22px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: var(--transition);
+            width: fit-content;
+        }
+
+        .btn-enquire:hover {
+            background: var(--gold);
+            color: var(--navy);
+        }
+
+        .btn-enquire svg { width: 16px; height: 16px; }
+
+        /* ===== DESTINATIONS ===== */
+        .destinations {
+            padding: 100px 0;
+            background: var(--cream);
+        }
+
+        .destinations-header {
+            text-align: center;
+            margin-bottom: 56px;
+        }
+
+        .destinations-header .section-label { justify-content: center; }
+        .destinations-header .section-label::before { display: none; }
+        .destinations-header .section-subtitle { margin: 0 auto; }
+
+        .dest-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 240px);
+            gap: 20px;
+        }
+
+        .dest-card {
+            border-radius: var(--radius);
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            display: flex;
+            align-items: flex-end;
+            transition: var(--transition);
+        }
+
+        .dest-card:first-child {
+            grid-row: span 2;
+        }
+
+        .dest-bg {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .dest-card:hover .dest-bg { transform: scale(1.05); }
+
+        .dest-bg.dubai-d { background: linear-gradient(135deg, #D4A853 0%, #B8860B 100%); }
+        .dest-bg.singapore-d { background: linear-gradient(135deg, #1B3F6B 0%, #4A90D9 100%); }
+        .dest-bg.thailand-d { background: linear-gradient(135deg, #E07A4B 0%, #D35400 100%); }
+        .dest-bg.goa-d { background: linear-gradient(135deg, #16A085 0%, #1ABC9C 100%); }
+        .dest-bg.maldives-d { background: linear-gradient(135deg, #0097A7 0%, #00BCD4 100%); }
+        .dest-bg.europe-d { background: linear-gradient(135deg, #5C6BC0 0%, #7E57C2 100%); }
+
+        .dest-icon {
+            font-size: 5rem;
+            opacity: 0.3;
+            filter: grayscale(0.3);
+        }
+
+        .dest-card:first-child .dest-icon { font-size: 8rem; }
+
+        .dest-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(11, 29, 53, 0.85) 0%, rgba(11, 29, 53, 0.1) 60%);
+            z-index: 1;
+        }
+
+        .dest-info {
+            position: relative;
+            z-index: 2;
+            padding: 28px;
+            width: 100%;
+        }
+
+        .dest-info h3 {
+            font-size: 1.4rem;
+            color: var(--white);
+            margin-bottom: 4px;
+        }
+
+        .dest-info p {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.6);
+        }
+
+        .dest-arrow {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 36px;
+            height: 36px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            transition: var(--transition);
+            opacity: 0;
+            transform: translate(-5px, 5px);
+        }
+
+        .dest-card:hover .dest-arrow {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+
+        .dest-arrow svg { width: 16px; height: 16px; color: var(--white); }
+
+        /* ===== TESTIMONIALS ===== */
+        .testimonials {
+            padding: 100px 0;
+            background: var(--warm-white);
+        }
+
+        .testimonials-header {
+            text-align: center;
+            margin-bottom: 56px;
+        }
+
+        .testimonials-header .section-label { justify-content: center; }
+        .testimonials-header .section-label::before { display: none; }
+        .testimonials-header .section-subtitle { margin: 0 auto; }
+
+        .test-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .test-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 36px;
+            border: 1px solid rgba(0,0,0,0.04);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .test-card:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-4px);
+        }
+
+        .test-quote {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            color: var(--gold);
+            opacity: 0.2;
+            line-height: 1;
+            position: absolute;
+            top: 20px;
+            right: 28px;
+        }
+
+        .test-stars {
+            display: flex;
+            gap: 3px;
+            margin-bottom: 18px;
+        }
+
+        .test-stars svg { width: 16px; height: 16px; color: var(--gold); fill: var(--gold); }
+
+        .test-card blockquote {
+            font-size: 0.95rem;
+            color: var(--text-mid);
+            line-height: 1.8;
+            margin-bottom: 24px;
+            font-style: italic;
+        }
+
+        .test-author {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .test-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--navy), var(--navy-mid));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--gold);
+            font-size: 1rem;
+        }
+
+        .test-name {
+            font-weight: 600;
+            color: var(--navy);
+            font-size: 0.95rem;
+        }
+
+        .test-trip {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-top: 2px;
+        }
+
+        /* ===== INSURANCE ===== */
+        .insurance {
+            padding: 100px 0;
+            background: linear-gradient(165deg, var(--navy) 0%, var(--navy-mid) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .insurance::before {
+            content: '';
+            position: absolute;
+            bottom: -200px;
+            left: -100px;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, var(--gold-glow), transparent 70%);
+            border-radius: 50%;
+        }
+
+        .ins-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .ins-content .section-title { color: var(--white); font-size: clamp(1.8rem, 3vw, 2.5rem); }
+        .ins-content .section-subtitle { color: rgba(255,255,255,0.55); margin-bottom: 32px; }
+
+        .ins-features {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 36px;
+        }
+
+        .ins-feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .ins-feature-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(201, 150, 59, 0.12);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .ins-feature-icon svg { width: 20px; height: 20px; color: var(--gold); }
+
+        .ins-feature h4 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--white);
+            margin-bottom: 4px;
+        }
+
+        .ins-feature p {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.45);
+            line-height: 1.6;
+        }
+
+        .ins-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ins-shield {
+            width: 280px;
+            height: 280px;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .ins-shield::before {
+            content: '';
+            position: absolute;
+            inset: 20px;
+            border: 1px dashed rgba(201, 150, 59, 0.2);
+            border-radius: 50%;
+        }
+
+        .ins-shield svg { width: 80px; height: 80px; color: var(--gold); opacity: 0.6; }
+
+        /* ===== CONTACT ===== */
+        .contact {
+            padding: 100px 0;
+            background: var(--warm-white);
+        }
+
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+        }
+
+        .contact-info {
+            padding-right: 20px;
+        }
+
+        .contact-info .section-subtitle { margin-bottom: 40px; }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            padding: 20px;
+            background: var(--white);
+            border-radius: var(--radius-sm);
+            border: 1px solid rgba(0,0,0,0.04);
+            transition: var(--transition);
+        }
+
+        .contact-method:hover {
+            box-shadow: var(--shadow-sm);
+            transform: translateX(4px);
+        }
+
+        .contact-method-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-method-icon.whatsapp { background: #25D366; }
+        .contact-method-icon.phone { background: var(--navy); }
+        .contact-method-icon.location { background: var(--coral); }
+
+        .contact-method-icon svg { width: 22px; height: 22px; color: var(--white); }
+
+        .contact-method h4 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-light);
+            margin-bottom: 4px;
+        }
+
+        .contact-method p {
+            font-size: 1rem;
+            color: var(--navy);
+            font-weight: 500;
+        }
+
+        .contact-form-wrapper {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 44px;
+            border: 1px solid rgba(0,0,0,0.04);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .contact-form-wrapper h3 {
+            font-size: 1.5rem;
+            color: var(--navy);
+            margin-bottom: 8px;
+        }
+
+        .form-subtitle {
+            font-size: 0.9rem;
+            color: var(--text-mid);
+            margin-bottom: 32px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 13px 18px;
+            border: 1.5px solid rgba(0,0,0,0.08);
+            border-radius: var(--radius-sm);
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.95rem;
+            color: var(--text-dark);
+            transition: var(--transition);
+            background: var(--warm-white);
+            outline: none;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--gold);
+            box-shadow: 0 0 0 3px var(--gold-glow);
+        }
+
+        .form-group textarea { resize: vertical; min-height: 100px; }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, var(--navy), var(--navy-mid));
+            color: var(--white);
+            border: none;
+            border-radius: var(--radius-sm);
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn-submit:hover {
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            color: var(--navy);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .btn-submit svg { width: 18px; height: 18px; }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: var(--navy);
+            padding: 64px 0 32px;
+        }
+
+        .footer-top {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 48px;
+            padding-bottom: 48px;
+            border-bottom: 1px solid rgba(255,255,255,0.07);
+        }
+
+        .footer-brand .logo { margin-bottom: 18px; }
+
+        .footer-brand p {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.45);
+            line-height: 1.7;
+            max-width: 320px;
+        }
+
+        .footer h4 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        .footer ul li { margin-bottom: 12px; }
+
+        .footer ul li a {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.5);
+            transition: var(--transition);
+        }
+
+        .footer ul li a:hover { color: var(--white); }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 32px;
+        }
+
+        .footer-bottom p {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.35);
+        }
+
+        /* ===== FLOATING WHATSAPP ===== */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .wa-tooltip {
+            background: var(--white);
+            color: var(--text-dark);
+            padding: 10px 18px;
+            border-radius: 12px 12px 0 12px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            box-shadow: var(--shadow-md);
+            opacity: 0;
+            transform: translateX(10px);
+            transition: var(--transition);
+            white-space: nowrap;
+        }
+
+        .whatsapp-float:hover .wa-tooltip {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .wa-btn {
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            transition: var(--transition);
+            animation: waPulse 2s infinite;
+        }
+
+        .wa-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 30px rgba(37, 211, 102, 0.5);
+        }
+
+        .wa-btn svg { width: 30px; height: 30px; color: var(--white); }
+
+        @keyframes waPulse {
+            0%, 100% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4); }
+            50% { box-shadow: 0 4px 30px rgba(37, 211, 102, 0.6), 0 0 0 10px rgba(37, 211, 102, 0.1); }
+        }
+
+        /* ===== SCROLL ANIMATIONS ===== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .why-grid { grid-template-columns: repeat(2, 1fr); }
+            .offers-grid { grid-template-columns: 1fr; }
+            .dest-grid { grid-template-columns: repeat(2, 1fr); grid-template-rows: auto; }
+            .dest-card:first-child { grid-row: span 1; }
+            .ins-layout { grid-template-columns: 1fr; }
+            .ins-visual { display: none; }
+            .contact-layout { grid-template-columns: 1fr; }
+            .footer-top { grid-template-columns: 1fr 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(11, 29, 53, 0.98);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 28px;
+                backdrop-filter: blur(20px);
+            }
+
+            .nav-links.open { display: flex; }
+            .nav-links a { font-size: 1.2rem; }
+            .hamburger { display: flex; }
+
+            .hero-content { padding: 140px 0 60px; }
+            .hero h1 { font-size: 2.4rem; }
+            .hero-stats { flex-direction: column; gap: 24px; }
+            .hero-stats { flex-wrap: wrap; gap: 28px; }
+            .hero-stat { min-width: 120px; }
+
+            .services-grid { grid-template-columns: 1fr; }
+            .why-grid { grid-template-columns: 1fr; }
+            .why-header { flex-direction: column; align-items: flex-start; }
+
+            .dest-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
+
+            .test-grid { grid-template-columns: 1fr; }
+
+            .offer-card { flex-direction: column; }
+            .offer-visual { width: 100%; min-height: 160px; }
+            .offers-header { flex-direction: column; align-items: flex-start; }
+
+            .form-row { grid-template-columns: 1fr; }
+            .contact-form-wrapper { padding: 28px; }
+
+            .footer-top { grid-template-columns: 1fr; gap: 36px; }
+            .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+
+            .whatsapp-float { bottom: 20px; right: 20px; }
+            .wa-tooltip { display: none; }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 2rem; }
+            .hero-desc { font-size: 1rem; }
+            .hero-actions { flex-direction: column; align-items: flex-start; }
+            .hero-stats { gap: 20px; }
+            .section-title { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="nav" id="nav">
+        <div class="container">
+            <div class="nav-inner">
+                <a href="#" class="logo">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="22" stroke="#C9963B" stroke-width="2" fill="none"/>
+                        <ellipse cx="24" cy="24" rx="10" ry="22" stroke="rgba(255,255,255,0.3)" stroke-width="1.2" fill="none"/>
+                        <line x1="2" y1="24" x2="46" y2="24" stroke="rgba(255,255,255,0.3)" stroke-width="1.2"/>
+                        <path d="M32 14 L40 18 L32 22 Z" fill="#C9963B"/>
+                        <line x1="14" y1="18" x2="36" y2="18" stroke="#C9963B" stroke-width="1.5" stroke-dasharray="2 3"/>
+                    </svg>
+                    <span class="logo-text">D S <span>Travels</span></span>
+                </a>
+                <div class="nav-links" id="navLinks">
+                    <a href="#services">Services</a>
+                    <a href="#why">Why Us</a>
+                    <a href="#offers">Offers</a>
+                    <a href="#destinations">Destinations</a>
+                    <a href="#reviews">Reviews</a>
+                    <a href="#contact">Contact</a>
+                    <a href="https://wa.me/919049390189?text=Hi%20D%20S%20Travels%2C%20I%27m%20interested%20in%20booking%20a%20trip!" class="nav-cta" target="_blank">WhatsApp Us</a>
+                </div>
+                <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-pattern"></div>
+        <svg class="hero-visual" viewBox="0 0 500 500" fill="none">
+            <circle cx="250" cy="250" r="200" stroke="white" stroke-width="0.5"/>
+            <circle cx="250" cy="250" r="150" stroke="white" stroke-width="0.5"/>
+            <circle cx="250" cy="250" r="100" stroke="white" stroke-width="0.5"/>
+            <path d="M150 250 Q250 150 350 250 Q250 350 150 250Z" stroke="white" stroke-width="0.5" fill="none"/>
+        </svg>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    Pune's Trusted Travel Partner
+                </div>
+                <h1>Your Journey<br>Begins <em>Here</em></h1>
+                <p class="hero-desc">From domestic getaways to international adventures — D S Travels handles your flights, hotels, and travel insurance so you can focus on making memories.</p>
+                <div class="hero-actions">
+                    <a href="https://wa.me/919049390189?text=Hi%20D%20S%20Travels%2C%20I%27m%20interested%20in%20booking%20a%20trip!" class="btn-primary" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.553 4.12 1.522 5.857L.057 23.764l6.071-1.592A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.82c-1.98 0-3.832-.53-5.432-1.46l-.39-.232-3.601.944.96-3.506-.254-.404A9.788 9.788 0 012.18 12c0-5.422 4.398-9.82 9.82-9.82 5.422 0 9.82 4.398 9.82 9.82 0 5.422-4.398 9.82-9.82 9.82z"/></svg>
+                        Book on WhatsApp
+                    </a>
+                    <a href="#services" class="btn-outline">
+                        Explore Services
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <h3>1000+</h3>
+                        <p>Happy Travellers</p>
+                    </div>
+                    <div class="hero-stat">
+                        <h3>50+</h3>
+                        <p>Destinations Covered</p>
+                    </div>
+                    <div class="hero-stat">
+                        <h3>24/7</h3>
+                        <p>Customer Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="services-header reveal">
+                <div class="section-label">What We Offer</div>
+                <h2 class="section-title">Our Core Services</h2>
+                <p class="section-subtitle">Everything you need for a hassle-free trip — from takeoff to touchdown and beyond.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 2L2 11l7 2.5M22 2l-9 20-2.5-7M22 2L9 13.5"/></svg>
+                    </div>
+                    <h3>Airline Tickets</h3>
+                    <p>Domestic and international flights at competitive fares. We compare across all major airlines to get you the best deals on economy, business, and first class.</p>
+                    <a href="https://wa.me/919049390189?text=Hi%2C%20I%20want%20to%20book%20flight%20tickets" class="service-link" target="_blank">
+                        Enquire Now
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M9 9h.01M15 9h.01M9 13h.01M15 13h.01"/></svg>
+                    </div>
+                    <h3>Hotel Bookings</h3>
+                    <p>From budget-friendly stays to luxury resorts — we book verified hotels worldwide. Special rates through our partner network save you more than booking direct.</p>
+                    <a href="https://wa.me/919049390189?text=Hi%2C%20I%20want%20to%20book%20a%20hotel" class="service-link" target="_blank">
+                        Enquire Now
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                    </div>
+                    <h3>Travel Insurance</h3>
+                    <p>Protect your trip against cancellations, medical emergencies, lost baggage, and delays. Comprehensive coverage plans from India's leading insurers.</p>
+                    <a href="https://wa.me/919049390189?text=Hi%2C%20I%20need%20travel%20insurance" class="service-link" target="_blank">
+                        Enquire Now
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WHY CHOOSE US ===== -->
+    <section class="why-us" id="why">
+        <div class="container">
+            <div class="why-header reveal">
+                <div>
+                    <div class="section-label">Why D S Travels</div>
+                    <h2 class="section-title">Built on Trust,<br>Driven by Service</h2>
+                </div>
+                <p class="section-subtitle">Hundreds of families in Pune trust us with their travel plans. Here's why.</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card reveal">
+                    <div class="why-number">01</div>
+                    <h3>Experienced Agency</h3>
+                    <p>Years of expertise in the travel industry. We know the ins and outs of booking, visa requirements, and travel logistics.</p>
+                </div>
+                <div class="why-card reveal">
+                    <div class="why-number">02</div>
+                    <h3>Best Price Guarantee</h3>
+                    <p>We compare fares across multiple platforms and airline partners to ensure you always get the most competitive prices.</p>
+                </div>
+                <div class="why-card reveal">
+                    <div class="why-number">03</div>
+                    <h3>24/7 Support</h3>
+                    <p>Travel doesn't follow business hours, and neither do we. Reach us anytime on WhatsApp for bookings or emergencies.</p>
+                </div>
+                <div class="why-card reveal">
+                    <div class="why-number">04</div>
+                    <h3>Hassle-Free Booking</h3>
+                    <p>Just tell us where and when — we handle everything from flight selection to hotel reservations to insurance paperwork.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SPECIAL OFFERS ===== -->
+    <section class="offers" id="offers">
+        <div class="container">
+            <div class="offers-header reveal">
+                <div>
+                    <div class="section-label">Limited Time Deals</div>
+                    <h2 class="section-title">Special Offers</h2>
+                    <p class="section-subtitle">Grab these exclusive deals before they're gone. New offers added regularly.</p>
+                </div>
+                <a href="https://wa.me/919049390189?text=Hi%2C%20I%20want%20to%20know%20about%20current%20offers" class="btn-primary" target="_blank" style="white-space:nowrap;">
+                    View All Deals
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+            <div class="offers-grid">
+                <div class="offer-card reveal">
+                    <div class="offer-visual">
+                        <div class="offer-visual-bg dubai">🏙️</div>
+                        <div class="offer-badge">Hot Deal</div>
+                    </div>
+                    <div class="offer-info">
+                        <div class="offer-route">Pune → Dubai</div>
+                        <h3>Dubai Explorer Package</h3>
+                        <p>Return flights + 4-star hotel for 5 nights. Includes airport transfers and city tour.</p>
+                        <div class="offer-price">
+                            <span class="from">from</span>
+                            <span class="amount">₹45,999</span>
+                            <span class="per">/person</span>
+                        </div>
+                        <a href="https://wa.me/919049390189?text=Hi%2C%20I%27m%20interested%20in%20the%20Dubai%20Explorer%20Package" class="btn-enquire" target="_blank">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.553 4.12 1.522 5.857L.057 23.764l6.071-1.592A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+                            Enquire Now
+                        </a>
+                    </div>
+                </div>
+                <div class="offer-card reveal">
+                    <div class="offer-visual">
+                        <div class="offer-visual-bg goa">🏖️</div>
+                        <div class="offer-badge">Popular</div>
+                    </div>
+                    <div class="offer-info">
+                        <div class="offer-route">Weekend Getaway</div>
+                        <h3>Goa Beach Retreat</h3>
+                        <p>3 nights at a beachside resort with breakfast. Perfect for a quick weekend escape from Pune.</p>
+                        <div class="offer-price">
+                            <span class="from">from</span>
+                            <span class="amount">₹12,999</span>
+                            <span class="per">/person</span>
+                        </div>
+                        <a href="https://wa.me/919049390189?text=Hi%2C%20I%27m%20interested%20in%20the%20Goa%20Beach%20Retreat" class="btn-enquire" target="_blank">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.553 4.12 1.522 5.857L.057 23.764l6.071-1.592A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+                            Enquire Now
+                        </a>
+                    </div>
+                </div>
+                <div class="offer-card reveal">
+                    <div class="offer-visual">
+                        <div class="offer-visual-bg thailand">🏯</div>
+                        <div class="offer-badge">Bestseller</div>
+                    </div>
+                    <div class="offer-info">
+                        <div class="offer-route">Pune → Bangkok</div>
+                        <h3>Thailand Adventure</h3>
+                        <p>7 nights covering Bangkok & Pattaya. Flights, hotel, transfers, and island tour included.</p>
+                        <div class="offer-price">
+                            <span class="from">from</span>
+                            <span class="amount">₹35,999</span>
+                            <span class="per">/person</span>
+                        </div>
+                        <a href="https://wa.me/919049390189?text=Hi%2C%20I%27m%20interested%20in%20the%20Thailand%20Adventure%20package" class="btn-enquire" target="_blank">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.553 4.12 1.522 5.857L.057 23.764l6.071-1.592A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+                            Enquire Now
+                        </a>
+                    </div>
+                </div>
+                <div class="offer-card reveal">
+                    <div class="offer-visual">
+                        <div class="offer-visual-bg singapore">🌃</div>
+                        <div class="offer-badge">New</div>
+                    </div>
+                    <div class="offer-info">
+                        <div class="offer-route">Pune → Singapore</div>
+                        <h3>Singapore City Break</h3>
+                        <p>4 nights in the Lion City. Flights, 4-star hotel, Sentosa pass, and Gardens by the Bay included.</p>
+                        <div class="offer-price">
+                            <span class="from">from</span>
+                            <span class="amount">₹52,999</span>
+                            <span class="per">/person</span>
+                        </div>
+                        <a href="https://wa.me/919049390189?text=Hi%2C%20I%27m%20interested%20in%20the%20Singapore%20City%20Break" class="btn-enquire" target="_blank">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.553 4.12 1.522 5.857L.057 23.764l6.071-1.592A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+                            Enquire Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== POPULAR DESTINATIONS ===== -->
+    <section class="destinations" id="destinations">
+        <div class="container">
+            <div class="destinations-header reveal">
+                <div class="section-label">Explore The World</div>
+                <h2 class="section-title">Popular Destinations</h2>
+                <p class="section-subtitle">Dream destinations our travellers love. Where will you go next?</p>
+            </div>
+            <div class="dest-grid">
+                <a href="https://wa.me/919049390189?text=Hi%2C%20I%27m%20interested%20in%20travelling%20to%20Dubai" class="dest-card reveal" target="_blank">
+                    <div class="dest-bg dubai-d"><span class="dest-icon">🏙️</span></div>
+                    <div class="dest-overlay"></div>
+                    <div class="dest-info">
+                        <h3>Dubai</h3>
+                        <p>City of Gold & Luxury</p>
+                    </div>
+                    <div class="dest-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></div>
+                </a>
+                <a href="https://wa.me/919049390189?text=Hi%2C%20I%27m%20interested%20in%20travelling%20to%20Singapore" class="dest-card reveal" target="_blank">
+                    <div class="dest-bg singapore-d"><span class="dest-icon">🌃</span></div>
+                    <div class="dest-overlay"></div>
+                    <div class="dest-info">
+                        <h3>Singapore</h3>
+                        <p>The Lion City</p>
+                    </div>
+                    <div class="dest-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></div>
+                </a>
+                <a href="https://wa.me/919049390189?text=Hi%2C%20I%27m%20interested%20in%20travelling%20to%20Thailand" class="dest-card reveal" target="_blank">
+                    <div class="dest-bg thailand-d"><span class="dest-icon">🏯</span></div>
+                    <div class="dest-overlay"></div>
+                    <div class="dest-info">
+                        <h3>Thailand</h3>
+                        <p>Land of Smiles</p>
+                    </div>
+                    <div class="dest-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></div>
+                </a>
+                <a href="https://wa.me/919049390189?text=Hi%2C%20I%27m%20interested%20in%20travelling%20to%20Goa" class="dest-card reveal" target="_blank">
+                    <div class="dest-bg goa-d"><span class="dest-icon">🏖️</span></div>
+                    <div class="dest-overlay"></div>
+                    <div class="dest-info">
+                        <h3>Goa</h3>
+                        <p>Beach Paradise</p>
+                    </div>
+                    <div class="dest-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></div>
+                </a>
+                <a href="https://wa.me/919049390189?text=Hi%2C%20I%27m%20interested%20in%20travelling%20to%20Maldives" class="dest-card reveal" target="_blank">
+                    <div class="dest-bg maldives-d"><span class="dest-icon">🏝️</span></div>
+                    <div class="dest-overlay"></div>
+                    <div class="dest-info">
+                        <h3>Maldives</h3>
+                        <p>Island Luxury</p>
+                    </div>
+                    <div class="dest-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></div>
+                </a>
+                <a href="https://wa.me/919049390189?text=Hi%2C%20I%27m%20interested%20in%20travelling%20to%20Europe" class="dest-card reveal" target="_blank">
+                    <div class="dest-bg europe-d"><span class="dest-icon">🏰</span></div>
+                    <div class="dest-overlay"></div>
+                    <div class="dest-info">
+                        <h3>Europe</h3>
+                        <p>Multi-City Adventures</p>
+                    </div>
+                    <div class="dest-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials" id="reviews">
+        <div class="container">
+            <div class="testimonials-header reveal">
+                <div class="section-label">Testimonials</div>
+                <h2 class="section-title">What Our Travellers Say</h2>
+                <p class="section-subtitle">Real stories from real travellers who booked with D S Travels.</p>
+            </div>
+            <div class="test-grid">
+                <div class="test-card reveal">
+                    <div class="test-quote">"</div>
+                    <div class="test-stars">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <blockquote>"Booked our family trip to Dubai through D S Travels. Everything was perfectly organized — flights, hotel, even the airport transfers. Will definitely book again!"</blockquote>
+                    <div class="test-author">
+                        <div class="test-avatar">RK</div>
+                        <div>
+                            <div class="test-name">Rajesh Kulkarni</div>
+                            <div class="test-trip">Family Trip to Dubai</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="test-card reveal">
+                    <div class="test-quote">"</div>
+                    <div class="test-stars">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <blockquote>"Got last-minute tickets to Goa at an amazing price. The team on WhatsApp responded within minutes and had everything sorted in under an hour. Highly recommend!"</blockquote>
+                    <div class="test-author">
+                        <div class="test-avatar">PS</div>
+                        <div>
+                            <div class="test-name">Priya Sharma</div>
+                            <div class="test-trip">Weekend Trip to Goa</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="test-card reveal">
+                    <div class="test-quote">"</div>
+                    <div class="test-stars">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <blockquote>"We've been booking all our business travel through D S Travels for over a year now. Always reliable, always great rates. They also helped us with comprehensive travel insurance."</blockquote>
+                    <div class="test-author">
+                        <div class="test-avatar">AM</div>
+                        <div>
+                            <div class="test-name">Amit Mehta</div>
+                            <div class="test-trip">Business Travel — Regular Client</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TRAVEL INSURANCE ===== -->
+    <section class="insurance" id="insurance">
+        <div class="container">
+            <div class="ins-layout">
+                <div class="ins-content reveal">
+                    <div class="section-label">Stay Protected</div>
+                    <h2 class="section-title">Travel with Peace of Mind</h2>
+                    <p class="section-subtitle">Don't let unexpected events ruin your trip. Our comprehensive travel insurance plans have you covered from departure to return.</p>
+                    <div class="ins-features">
+                        <div class="ins-feature">
+                            <div class="ins-feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            </div>
+                            <div>
+                                <h4>Trip Cancellation Cover</h4>
+                                <p>Get reimbursed if you need to cancel due to illness, emergencies, or unforeseen events.</p>
+                            </div>
+                        </div>
+                        <div class="ins-feature">
+                            <div class="ins-feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.8 2.3A.3.3 0 105 2H4a2 2 0 00-2 2v5a6 6 0 006 6v0a6 6 0 006-6V4a2 2 0 00-2-2h-1a.2.2 0 10.3.3"/><path d="M8 15v1a6 6 0 006 6v0a6 6 0 006-6v-4"/></svg>
+                            </div>
+                            <div>
+                                <h4>Medical Emergency Cover</h4>
+                                <p>Hospital bills, doctor visits, and emergency evacuation — all covered abroad.</p>
+                            </div>
+                        </div>
+                        <div class="ins-feature">
+                            <div class="ins-feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a4 4 0 018 0v2"/><circle cx="12" cy="14" r="2"/></svg>
+                            </div>
+                            <div>
+                                <h4>Lost Baggage Protection</h4>
+                                <p>Compensation for lost, stolen, or delayed baggage so you can replace essentials.</p>
+                            </div>
+                        </div>
+                        <div class="ins-feature">
+                            <div class="ins-feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            </div>
+                            <div>
+                                <h4>Flight Delay Coverage</h4>
+                                <p>Compensation for accommodation and meals if your flight is significantly delayed.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/919049390189?text=Hi%2C%20I%20need%20information%20about%20travel%20insurance" class="btn-primary" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        Get Insurance Quote
+                    </a>
+                </div>
+                <div class="ins-visual reveal">
+                    <div class="ins-shield">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-info reveal">
+                    <div class="section-label">Get In Touch</div>
+                    <h2 class="section-title">Ready to Plan<br>Your Trip?</h2>
+                    <p class="section-subtitle">Reach out to us on WhatsApp or fill in the form. We typically respond within minutes during business hours.</p>
+                    <div class="contact-methods">
+                        <a href="https://wa.me/919049390189" class="contact-method" target="_blank">
+                            <div class="contact-method-icon whatsapp">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" fill="white"/></svg>
+                            </div>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>+91 90493 90189</p>
+                            </div>
+                        </a>
+                        <a href="tel:+919049390189" class="contact-method">
+                            <div class="contact-method-icon phone">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                            </div>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+91 90493 90189</p>
+                            </div>
+                        </a>
+                        <div class="contact-method">
+                            <div class="contact-method-icon location">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <h4>Visit Us</h4>
+                                <p>Aundh, Pune, Maharashtra</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper reveal">
+                    <h3>Send Us a Message</h3>
+                    <p class="form-subtitle">Fill in the details and we'll get back to you shortly.</p>
+                    <form id="contactForm" onsubmit="handleSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Your Name</label>
+                                <input type="text" name="name" placeholder="Full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <input type="tel" name="phone" placeholder="+91 ..." required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Interested In</label>
+                            <select name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="flights">Flight Tickets</option>
+                                <option value="hotels">Hotel Booking</option>
+                                <option value="insurance">Travel Insurance</option>
+                                <option value="package">Complete Package</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Destination</label>
+                                <input type="text" name="destination" placeholder="Where to?">
+                            </div>
+                            <div class="form-group">
+                                <label>Travel Date</label>
+                                <input type="date" name="date">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Additional Details</label>
+                            <textarea name="message" placeholder="Number of travellers, preferences, etc."></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            Send via WhatsApp
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.553 4.12 1.522 5.857L.057 23.764l6.071-1.592A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" style="height:36px;">
+                            <circle cx="24" cy="24" r="22" stroke="#C9963B" stroke-width="2" fill="none"/>
+                            <ellipse cx="24" cy="24" rx="10" ry="22" stroke="rgba(255,255,255,0.3)" stroke-width="1.2" fill="none"/>
+                            <line x1="2" y1="24" x2="46" y2="24" stroke="rgba(255,255,255,0.3)" stroke-width="1.2"/>
+                            <path d="M32 14 L40 18 L32 22 Z" fill="#C9963B"/>
+                            <line x1="14" y1="18" x2="36" y2="18" stroke="#C9963B" stroke-width="1.5" stroke-dasharray="2 3"/>
+                        </svg>
+                        <span class="logo-text">D S <span>Travels</span></span>
+                    </a>
+                    <p>Your trusted travel partner in Pune. We make booking flights, hotels, and travel insurance simple and affordable. Let us handle the details while you enjoy the journey.</p>
+                </div>
+                <div>
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Airline Tickets</a></li>
+                        <li><a href="#services">Hotel Bookings</a></li>
+                        <li><a href="#insurance">Travel Insurance</a></li>
+                        <li><a href="#offers">Special Offers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Destinations</h4>
+                    <ul>
+                        <li><a href="#destinations">Dubai</a></li>
+                        <li><a href="#destinations">Singapore</a></li>
+                        <li><a href="#destinations">Thailand</a></li>
+                        <li><a href="#destinations">Goa</a></li>
+                        <li><a href="#destinations">Maldives</a></li>
+                        <li><a href="#destinations">Europe</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="https://wa.me/919049390189" target="_blank">WhatsApp Us</a></li>
+                        <li><a href="tel:+919049390189">+91 90493 90189</a></li>
+                        <li><a href="#contact">Aundh, Pune</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 D S Travels. All rights reserved.</p>
+                <p>Pune's Trusted Travel Partner</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== FLOATING WHATSAPP ===== -->
+    <a href="https://wa.me/919049390189?text=Hi%20D%20S%20Travels%2C%20I%27d%20like%20to%20enquire%20about%20your%20services" class="whatsapp-float" target="_blank">
+        <div class="wa-tooltip">Chat with us!</div>
+        <div class="wa-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.553 4.12 1.522 5.857L.057 23.764l6.071-1.592A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.82c-1.98 0-3.832-.53-5.432-1.46l-.39-.232-3.601.944.96-3.506-.254-.404A9.788 9.788 0 012.18 12c0-5.422 4.398-9.82 9.82-9.82 5.422 0 9.82 4.398 9.82 9.82 0 5.422-4.398 9.82-9.82 9.82z"/></svg>
+        </div>
+    </a>
+
+    <script>
+        // ===== NAVIGATION =====
+        const nav = document.getElementById('nav');
+        const navLinks = document.getElementById('navLinks');
+        const hamburger = document.getElementById('hamburger');
+
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        function toggleMenu() {
+            navLinks.classList.toggle('open');
+            hamburger.classList.toggle('active');
+        }
+
+        // Close mobile menu on link click
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+                hamburger.classList.remove('active');
+            });
+        });
+
+        // ===== SCROLL REVEAL =====
+        const revealElements = document.querySelectorAll('.reveal');
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, index * 80);
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // ===== CONTACT FORM → WHATSAPP =====
+        function handleSubmit(e) {
+            e.preventDefault();
+            const form = e.target;
+            const name = form.name.value;
+            const phone = form.phone.value;
+            const service = form.service.value;
+            const destination = form.destination.value;
+            const date = form.date.value;
+            const message = form.message.value;
+
+            let text = `Hi D S Travels! I'd like to make an enquiry.\n\n`;
+            text += `*Name:* ${name}\n`;
+            text += `*Phone:* ${phone}\n`;
+            if (service) text += `*Service:* ${service}\n`;
+            if (destination) text += `*Destination:* ${destination}\n`;
+            if (date) text += `*Travel Date:* ${date}\n`;
+            if (message) text += `*Details:* ${message}\n`;
+
+            const waUrl = `https://wa.me/919049390189?text=${encodeURIComponent(text)}`;
+            window.open(waUrl, '_blank');
+        }
+
+        // ===== SMOOTH SCROLL FOR SAFARI =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
