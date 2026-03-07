@@ -10,21 +10,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-        :root { --navy: #0B1D35; --navy-mid: #132D4F; --gold: #C9963B; --gold-light: #E4BE7A; --warm-white: #FAF8F5; --white: #FFFFFF; --text-dark: #1A1A2E; --text-mid: #4A5568; --text-light: #8A94A6; }
+        :root { --navy: #2D3142; --navy-mid: #3D4258; --gold: #E8937C; --gold-light: #F4A89A; --warm-white: #FFF9F0; --white: #FFFFFF; --text-dark: #2D3142; --text-mid: #5C6378; --text-light: #8A94A6; --sky: #89C4E1; }
         body { font-family: 'DM Sans', sans-serif; background: var(--warm-white); color: var(--text-dark); }
         h1, h2, h3 { font-family: 'Playfair Display', serif; }
         a { text-decoration: none; color: inherit; }
 
-        .nav { background: var(--navy); padding: 16px 0; }
+        .nav { background: var(--white); padding: 16px 0; box-shadow: 0 2px 12px rgba(45,49,66,0.06); }
         .container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
         .nav .container { max-width: 1000px; }
         .nav-inner { display: flex; align-items: center; justify-content: space-between; }
-        .logo { display: flex; align-items: center; gap: 10px; color: var(--white); font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; }
+        .logo { display: flex; align-items: center; gap: 10px; color: var(--text-dark); font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; }
         .logo span { color: var(--gold); }
         .nav-links { display: flex; gap: 24px; align-items: center; }
-        .nav-links a { color: rgba(255,255,255,0.7); font-size: 0.9rem; }
-        .nav-links a:hover { color: var(--white); }
-        .nav-cta { background: linear-gradient(135deg, var(--gold), var(--gold-light)); color: var(--navy) !important; padding: 8px 20px; border-radius: 50px; font-weight: 600; font-size: 0.85rem; }
+        .nav-links a { color: rgba(45,49,66,0.7); font-size: 0.9rem; }
+        .nav-links a:hover { color: var(--text-dark); }
+        .nav-cta { background: linear-gradient(135deg, var(--gold), var(--gold-light)); color: var(--white) !important; padding: 8px 20px; border-radius: 50px; font-weight: 600; font-size: 0.85rem; }
 
         .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--gold); font-weight: 600; font-size: 0.9rem; margin: 32px 0 24px; }
         .back-link:hover { gap: 10px; }
@@ -42,12 +42,12 @@
         .post-content a { color: var(--gold); text-decoration: underline; }
         .post-content blockquote { border-left: 4px solid var(--gold); padding: 16px 24px; margin: 20px 0; background: rgba(201,150,59,0.05); border-radius: 0 8px 8px 0; font-style: italic; }
 
-        .cta-box { background: var(--navy); border-radius: 16px; padding: 36px; text-align: center; margin-bottom: 60px; }
+        .cta-box { background: #2D3142; border-radius: 16px; padding: 36px; text-align: center; margin-bottom: 60px; }
         .cta-box h3 { color: var(--white); font-size: 1.3rem; margin-bottom: 12px; }
         .cta-box p { color: rgba(255,255,255,0.6); margin-bottom: 20px; }
         .cta-box a { display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(135deg, var(--gold), var(--gold-light)); color: var(--navy); padding: 14px 32px; border-radius: 50px; font-weight: 700; }
 
-        .footer { background: var(--navy); padding: 32px 0; text-align: center; color: rgba(255,255,255,0.4); font-size: 0.85rem; }
+        .footer { background: #2D3142; padding: 32px 0; text-align: center; color: rgba(255,255,255,0.4); font-size: 0.85rem; }
     </style>
 </head>
 <body>
