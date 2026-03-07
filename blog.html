@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog — D S Travels | Pune</title>
+    <meta name="description" content="Travel tips, destination guides, and deals from D S Travels, Pune's trusted corporate travel agency.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --navy: #0B1D35; --navy-mid: #132D4F; --gold: #C9963B; --gold-light: #E4BE7A; --warm-white: #FAF8F5; --white: #FFFFFF; --text-dark: #1A1A2E; --text-mid: #4A5568; --text-light: #8A94A6; }
+        body { font-family: 'DM Sans', sans-serif; background: var(--warm-white); color: var(--text-dark); }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        a { text-decoration: none; color: inherit; }
+
+        .nav { background: var(--navy); padding: 16px 0; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+        .nav-inner { display: flex; align-items: center; justify-content: space-between; }
+        .logo { display: flex; align-items: center; gap: 10px; color: var(--white); font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; }
+        .logo span { color: var(--gold); }
+        .nav-links { display: flex; gap: 24px; align-items: center; }
+        .nav-links a { color: rgba(255,255,255,0.7); font-size: 0.9rem; }
+        .nav-links a:hover { color: var(--white); }
+        .nav-cta { background: linear-gradient(135deg, var(--gold), var(--gold-light)); color: var(--navy) !important; padding: 8px 20px; border-radius: 50px; font-weight: 600; font-size: 0.85rem; }
+
+        .page-header { padding: 60px 0 40px; text-align: center; }
+        .page-header h1 { font-size: 2.5rem; color: var(--navy); margin-bottom: 12px; }
+        .page-header p { color: var(--text-mid); font-size: 1.1rem; }
+
+        .blog-grid { display: grid; gap: 24px; padding-bottom: 80px; }
+        .blog-card { background: var(--white); border-radius: 16px; padding: 32px; border: 1px solid rgba(0,0,0,0.04); transition: 0.3s; }
+        .blog-card:hover { transform: translateY(-4px); box-shadow: 0 8px 30px rgba(0,0,0,0.08); }
+        .blog-card h2 { font-size: 1.4rem; color: var(--navy); margin-bottom: 8px; }
+        .blog-card h2 a:hover { color: var(--gold); }
+        .blog-card .meta { font-size: 0.85rem; color: var(--text-light); margin-bottom: 14px; }
+        .blog-card p { color: var(--text-mid); line-height: 1.7; margin-bottom: 16px; }
+        .read-more { color: var(--gold); font-weight: 600; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 6px; }
+        .read-more:hover { gap: 12px; }
+
+        .empty { text-align: center; padding: 80px 0; color: var(--text-light); }
+        .empty h2 { font-size: 1.5rem; margin-bottom: 8px; color: var(--text-mid); }
+
+        .footer { background: var(--navy); padding: 32px 0; text-align: center; color: rgba(255,255,255,0.4); font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-inner">
+                <a href="/" class="logo">D S <span>Travels</span></a>
+                <div class="nav-links">
+                    <a href="/">Home</a>
+                    <a href="/blog.html" style="color:var(--white);">Blog</a>
+                    <a href="https://wa.me/919049390189" class="nav-cta" target="_blank">WhatsApp Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Travel Blog</h1>
+            <p>Tips, guides, and deals to help you travel smarter.</p>
+        </div>
+        <div class="blog-grid" id="blogGrid">
+            <div class="empty">
+                <h2>Loading...</h2>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 D S Travels. All rights reserved. | Aundh, Pune</p>
+        </div>
+    </footer>
+
+    <script>
+    (async function() {
+        const grid = document.getElementById('blogGrid');
+        try {
+            const res = await fetch('api/blog.php');
+            const posts = await res.json();
+            if (!posts.length) {
+                grid.innerHTML = '<div class="empty"><h2>Coming Soon</h2><p>We\'re working on great travel content. Check back soon!</p></div>';
+                return;
+            }
+            grid.innerHTML = posts.map(p => `
+                <div class="blog-card">
+                    <h2><a href="blog-post.html?slug=${p.slug}">${p.title}</a></h2>
+                    <div class="meta">${new Date(p.date).toLocaleDateString('en-IN',{year:'numeric',month:'long',day:'numeric'})} · ${p.author||'D S Travels'}</div>
+                    <p>${p.excerpt||''}</p>
+                    <a href="blog-post.html?slug=${p.slug}" class="read-more">Read More →</a>
+                </div>`).join('');
+        } catch(e) {
+            grid.innerHTML = '<div class="empty"><h2>Coming Soon</h2><p>Blog posts will appear here once published.</p></div>';
+        }
+    })();
+    </script>
+</body>
+</html>

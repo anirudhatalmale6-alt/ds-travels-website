@@ -1,0 +1,94 @@
+{
+  "sections": {
+    "hero": { "visible": true },
+    "services": { "visible": true },
+    "why": { "visible": true },
+    "offers": { "visible": true },
+    "destinations": { "visible": true },
+    "testimonials": { "visible": true },
+    "insurance": { "visible": true },
+    "contact": { "visible": true }
+  },
+  "offers": [
+    {
+      "id": "offer_1",
+      "title": "Dubai Explorer Package",
+      "description": "Return flights + 4-star hotel for 5 nights. Includes airport transfers and city tour.",
+      "price": "₹45,999",
+      "route": "Pune → Dubai",
+      "badge": "Hot Deal",
+      "emoji": "🏙️",
+      "colorFrom": "#D4A853",
+      "colorTo": "#E8734A",
+      "whatsappText": "Hi, I'm interested in the Dubai Explorer Package"
+    },
+    {
+      "id": "offer_2",
+      "title": "Goa Beach Retreat",
+      "description": "3 nights at a beachside resort with breakfast. Perfect for a quick weekend escape from Pune.",
+      "price": "₹12,999",
+      "route": "Weekend Getaway",
+      "badge": "Popular",
+      "emoji": "🏖️",
+      "colorFrom": "#2DB87D",
+      "colorTo": "#16A085",
+      "whatsappText": "Hi, I'm interested in the Goa Beach Retreat"
+    },
+    {
+      "id": "offer_3",
+      "title": "Thailand Adventure",
+      "description": "7 nights covering Bangkok & Pattaya. Flights, hotel, transfers, and island tour included.",
+      "price": "₹35,999",
+      "route": "Pune → Bangkok",
+      "badge": "Bestseller",
+      "emoji": "🏯",
+      "colorFrom": "#E07A4B",
+      "colorTo": "#C0392B",
+      "whatsappText": "Hi, I'm interested in the Thailand Adventure package"
+    },
+    {
+      "id": "offer_4",
+      "title": "Singapore City Break",
+      "description": "4 nights in the Lion City. Flights, 4-star hotel, Sentosa pass, and Gardens by the Bay included.",
+      "price": "₹52,999",
+      "route": "Pune → Singapore",
+      "badge": "New",
+      "emoji": "🌃",
+      "colorFrom": "#1B3F6B",
+      "colorTo": "#2980B9",
+      "whatsappText": "Hi, I'm interested in the Singapore City Break"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "test_1",
+      "name": "Rajesh Kulkarni",
+      "initials": "RK",
+      "quote": "Booked our family trip to Dubai through D S Travels. Everything was perfectly organized — flights, hotel, even the airport transfers. Will definitely book again!",
+      "trip": "Family Trip to Dubai",
+      "rating": 5
+    },
+    {
+      "id": "test_2",
+      "name": "Priya Sharma",
+      "initials": "PS",
+      "quote": "Got last-minute tickets to Goa at an amazing price. The team on WhatsApp responded within minutes and had everything sorted in under an hour. Highly recommend!",
+      "trip": "Weekend Trip to Goa",
+      "rating": 5
+    },
+    {
+      "id": "test_3",
+      "name": "Amit Mehta",
+      "initials": "AM",
+      "quote": "We've been booking all our business travel through D S Travels for over a year now. Always reliable, always great rates. They also helped us with comprehensive travel insurance.",
+      "trip": "Business Travel — Regular Client",
+      "rating": 5
+    }
+  ],
+  "about": {
+    "heroTitle": "Smarter Fares,<br>Lower <em>Cancellations</em>",
+    "heroBadge": "Corporate & SME Travel Specialists",
+    "heroDescription": "D S Travels specialises in corporate and SME bookings with significantly lower cancellation charges. Our flight fares and hotel rates beat the major portals — because we work directly with airline and hotel partners.",
+    "footerText": "Pune's specialist in corporate and SME travel bookings. Lower cancellation charges, competitive sale fares, and hotel rates that beat the major portals. Let us handle your travel."
+  }
+}
